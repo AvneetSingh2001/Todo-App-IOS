@@ -8,18 +8,23 @@
 import SwiftUI
 
 struct ListView: View {
-    @State var items: [String] = [
-        "This is first item",
-        "This is second item",
-        "This is third one"
-    ]
+    
+    @EnvironmentObject var listViewModel: ListViewModel
     
     var body: some View {
         List {
-            ForEach(items, id: \.self) { item in
-                ListRowView(title: item)
+            ForEach(listViewModel.items) { item in
+                ListRowView(item: item)
+                    .onTapGesture {
+                        withAnimation(.linear) {
+                            listViewModel.updateItem(item: item)
+                        }
+                    }
             }
+            .onDelete(perform: listViewModel.deleteItem)
+            .onMove(perform: listViewModel.moveItem)
         }
+        .listStyle(.plain)
         .navigationTitle("Todo List 📝")
         .navigationBarItems(
             leading: EditButton(),
@@ -27,10 +32,12 @@ struct ListView: View {
                 NavigationLink("Add", destination: AddView())
         )
     }
+    
+   
 }
 
 #Preview {
     NavigationView {
-        ListView()
+        ListView().environmentObject(ListViewModel())
     }
 }
