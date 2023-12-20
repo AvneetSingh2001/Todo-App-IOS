@@ -13,8 +13,7 @@ struct AddView: View {
     @EnvironmentObject var listViewModel: ListViewModel
     
     @State var textFieldText: String = ""
-    @State var mercuryColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
-    
+
     @State var alertTitle: String = ""
     @State var showAlert: Bool = false
     
@@ -23,7 +22,7 @@ struct AddView: View {
             TextField("Type Something here...", text: $textFieldText)
                 .padding(.horizontal)
                 .frame(height: 55)
-                .background(Color(mercuryColor))
+                .background(Color(UIColor.secondarySystemBackground))
                 .cornerRadius(10)
             
             Button(action: saveButtonPressed, label: {

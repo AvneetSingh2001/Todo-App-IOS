@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CE26609F2B2833C800C4EECC /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26609E2B2833C800C4EECC /* ItemModel.swift */; };
+		CE6CC12E2B338C3200EC1B27 /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6CC12D2B338C3200EC1B27 /* NoItemsView.swift */; };
+		CE6CC1302B33A36100EC1B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6CC12F2B33A36100EC1B27 /* LaunchScreen.storyboard */; };
 		CEAFEFC82B26EC8A001CD4BB /* Todo_App_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAFEFC72B26EC8A001CD4BB /* Todo_App_IOSApp.swift */; };
 		CEAFEFCC2B26EC8C001CD4BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAFEFCB2B26EC8C001CD4BB /* Assets.xcassets */; };
 		CEAFEFCF2B26EC8C001CD4BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAFEFCE2B26EC8C001CD4BB /* Preview Assets.xcassets */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		CE26609E2B2833C800C4EECC /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		CE6CC12D2B338C3200EC1B27 /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
+		CE6CC12F2B33A36100EC1B27 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEAFEFC42B26EC8A001CD4BB /* Todo App IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo App IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAFEFC72B26EC8A001CD4BB /* Todo_App_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_App_IOSApp.swift; sourceTree = "<group>"; };
 		CEAFEFCB2B26EC8C001CD4BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				CEAFEFD62B26ED79001CD4BB /* ListView.swift */,
 				CEAFEFD82B26F359001CD4BB /* ListRowView.swift */,
 				CEAFEFDA2B26FB70001CD4BB /* AddView.swift */,
+				CE6CC12D2B338C3200EC1B27 /* NoItemsView.swift */,
+				CE6CC12F2B33A36100EC1B27 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6CC1302B33A36100EC1B27 /* LaunchScreen.storyboard in Resources */,
 				CEAFEFCF2B26EC8C001CD4BB /* Preview Assets.xcassets in Resources */,
 				CEAFEFCC2B26EC8C001CD4BB /* Assets.xcassets in Resources */,
 			);
@@ -178,6 +185,7 @@
 				CEC7CA8E2B30EDFA002961E3 /* ListViewModel.swift in Sources */,
 				CEAFEFC82B26EC8A001CD4BB /* Todo_App_IOSApp.swift in Sources */,
 				CEAFEFD72B26ED79001CD4BB /* ListView.swift in Sources */,
+				CE6CC12E2B338C3200EC1B27 /* NoItemsView.swift in Sources */,
 				CEAFEFD92B26F359001CD4BB /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,9 +323,11 @@
 				DEVELOPMENT_TEAM = Z52R6G56V8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Avneet Doings";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -344,9 +354,11 @@
 				DEVELOPMENT_TEAM = Z52R6G56V8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Avneet Doings";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
